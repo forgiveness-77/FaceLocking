@@ -27,7 +27,7 @@ This project upgrades from traditional face recognition by adding persistent ide
 
 ## Project Structure
 
-```
+```text
 FaceRecognition/
 ├── data/
 │   ├── db/
@@ -97,13 +97,14 @@ Unlike basic face recognition which processes each frame independently, Face Loc
 4. Action Detection (While Locked)
    - Detects and visualizes the following actions:
 
-     Action	Detection Method	Visual Indicator
-     Face Moved Left	Horizontal position tracking	← Arrow + Distance
-     Face Moved Right	Horizontal position tracking	→ Arrow + Distance
-     Eye Blink	Eye landmark distance changes	👁️ "Blink!" text
-     Smile/Laugh	Mouth width/height ratio	😊 "Smile!" text
-     Looking Up/Down	Vertical face position	↑↓ Arrows
-     Nodding	Vertical movement pattern	"Nodding" text
+| Action | Detection Method | Visual Indicator |
+|---|---|---|
+| Face Moved Left | Horizontal position tracking | ← Arrow + Distance |
+| Face Moved Right | Horizontal position tracking | → Arrow + Distance |
+| Eye Blink | Eye landmark distance changes | 👁️ "Blink!" text |
+| Smile / Laugh | Mouth width/height ratio | 😊 "Smile!" text |
+| Looking Up / Down | Vertical face position | ↑↓ Arrows |
+| Nodding | Vertical movement pattern | "Nodding" text |
 
 5. Action History Recording
    - While face is locked, all detected actions are recorded to timestamped files:
